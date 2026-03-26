@@ -1,5 +1,6 @@
 import React, {useContext} from 'react'
 import { GlobalContext } from '../context/GlobalState'
+import Movimiento from './Movimiento'
 
 const MovimientosLista = () => {
     const {movimientos} = useContext(GlobalContext)

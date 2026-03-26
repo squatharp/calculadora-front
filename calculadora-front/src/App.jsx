@@ -4,7 +4,7 @@ import Header from './components/Header'
 import Balance from './components/Balance'
 import IngresosEgresos from './components/IngresosEgresos'
 import MovimientosLista from './components/MovimientosLista'
-import AddForm from './components/addForm'
+import AddForm from './components/AddForm'
 const App = () => {
   return (
     <GlobalProvider>

@@ -60,7 +60,7 @@ export const GlobalProvider = ({children}) => {
 
             dispatch({
                 type: 'ADD_MOVIMIENTO',
-                payload: error.message
+                payload: data
             })
         } catch (error){
             dispatch({

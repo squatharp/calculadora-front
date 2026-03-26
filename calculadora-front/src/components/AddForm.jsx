@@ -1,9 +1,8 @@
-import React from 'react'
+import React, {useContext, useState} from 'react'
 import { GlobalContext } from '../context/GlobalState'
-import { useState } from 'react'
-import { useContext } from 'react'
 
-const addForm = () => {
+
+const AddForm = () => {
 
     //definimos los estados locales para los inputs
     const [descripcion, setDescripcion] = useState("")
@@ -30,7 +29,7 @@ const addForm = () => {
   return (
     <>
         <h3>Agregar Movimiento</h3>
-        <form>
+        <form onSubmit={onSubmit}>
             <div className='form-control'>
                 <label htmlFor='descripcion'>Descripción:</label>
                 <input
@@ -57,4 +56,4 @@ const addForm = () => {
   )
 }
 
-export default addForm
+export default AddForm
